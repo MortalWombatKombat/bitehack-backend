@@ -7,13 +7,6 @@ repos:
       - id: trailing-whitespace
         files: ".+\\.py$"
       - id: end-of-file-fixer
-  - repo: https://github.com/deployed/pre_ticket
-    rev: 1.0.1
-    hooks:
-      - id: pre_ticket
-        language_version: python3.10
-        stages: [commit-msg]
-        args: ['--regex=(?P<ticket>[0-9]+)_.*']
   - repo: https://github.com/pycqa/flake8
     rev: 3.9.2
     hooks:
