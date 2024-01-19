@@ -39,5 +39,5 @@ def debug_task(self):
     # if you want to delay the task execution, use datetime.utcnow()
     debug_task.apply_async(eta=datetime.datetime.utcnow() + datetime.timedelta(seconds=10))
     """
-    print("Request: {0!r}".format(self.request))
-    logger.info("Request: {0!r}".format(self.request))
+    print("Request: %r", self.request)
+    logger.info("Request: %r", self.request)

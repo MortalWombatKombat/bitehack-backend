@@ -1,9 +1,5 @@
 # App for Bitehack hackathon
 
-[![CI](https://github.com/jarkol01/bitehack2024/actions/workflows/backend.yml/badge.svg)](https://github.com/jarkol01/bitehack2024/actions)
-
-
-
 # Prerequisites
 
 ## Native way with virtualenv
