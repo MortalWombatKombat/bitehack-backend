@@ -1,3 +1,6 @@
+from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from drf_yasg import openapi
@@ -29,4 +32,6 @@ urlpatterns = [
         name="schema-swagger",
     ),
     path("__debug__/", include("debug_toolbar.urls")),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += i18n_patterns(path("admin/", admin.site.urls))
