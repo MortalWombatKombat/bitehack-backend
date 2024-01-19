@@ -1,10 +1,12 @@
 from pathlib import Path
 
 from environs import Env
+
+from .conf.celery_settings import *
+
 # noinspection PyUnresolvedReferences
 # flake8: noqa
 from .conf.theme import *
-from .conf.celery_settings import *
 
 env = Env()
 
@@ -32,7 +34,6 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     "rest_framework",
-    "rest_flex_fields",
     "drf_yasg",
     "django_filters",
     "debug_toolbar",

@@ -19,10 +19,15 @@ services:
   postgres:
     restart: always
     image: postgres:13-alpine
+    container_name: bitehack2024_db
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data/
+    environment:
+        POSTGRES_USER: bitehack2024
+        POSTGRES_PASSWORD: bitehack2024
+        POSTGRES_DB: bitehack2024
 
 volumes:
   pgdata:

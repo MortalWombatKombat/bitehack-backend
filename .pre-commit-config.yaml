@@ -58,4 +58,4 @@ repos:
     hooks:
     -   id: django-upgrade
         language_version: python3.10
-        args: ["--target-version", "4.2"]
+        args: ["--target-version", "4.1"]
