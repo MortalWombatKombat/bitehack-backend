@@ -1,0 +1,16 @@
+Django
+djangorestframework
+djoser
+djangorestframework-simplejwt
+drf-flex-fields
+drf-yasg
+django-filter
+django-jazzmin
+django-extensions
+django-debug-toolbar
+django-admin-display
+celery
+psycopg2-binary
+ipython
+environs
+pyyaml
