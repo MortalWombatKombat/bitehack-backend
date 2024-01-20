@@ -19,11 +19,13 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
-router = DefaultRouter()
+api_urls = [
+    path("", include("bitehack2024.accounts.urls")),
+]
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
+    path("api/", include(api_urls)),
     path("api/auth/", include("bitehack2024.accounts.urls")),
     path(
         "api/doc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"

@@ -1,0 +1,84 @@
+- model: accounts.addiction
+  pk: 1
+  fields:
+    name: Alkohol
+    time_events:
+    - 1
+    educational:
+    - 1
+    question_sets:
+    - 1
+    - 2
+    socratic_dialogue_questions:
+    - 1
+- model: challenges.questionset
+  pk: 1
+  fields:
+    title: alkohol 1
+    questions:
+    - 1
+    - 2
+    - 3
+- model: challenges.questionset
+  pk: 2
+  fields:
+    title: alkohol 2
+    questions:
+    - 4
+    - 5
+    - 6
+- model: challenges.question
+  pk: 1
+  fields:
+    title: '1'
+    value: Do you think there is a problem with alcohol use?
+- model: challenges.question
+  pk: 2
+  fields:
+    title: '1'
+    value: What benefits do you attribute to drinking alcohol and what negative consequences
+      do you see?
+- model: challenges.question
+  pk: 3
+  fields:
+    title: '1'
+    value: Have you ever wondered why you turn to alcohol, especially in difficult
+      times?
+- model: challenges.question
+  pk: 4
+  fields:
+    title: '2'
+    value: What are your goals and values ​​in life, and how does alcohol use affect
+      achieving them?
+- model: challenges.question
+  pk: 5
+  fields:
+    title: '2'
+    value: Have you noticed any changes in your behavior or relationships as a result
+      of drinking alcohol?
+- model: challenges.question
+  pk: 6
+  fields:
+    title: '2'
+    value: Do you think alcohol affects your mental and physical health?
+- model: challenges.educational
+  pk: 1
+  fields:
+    title: Przyczyna alkoholizmu
+    content: Alcoholism, also known as alcohol use disorder (AUD), is influenced by
+      a combination of factors. While genetics, environment, and social influences
+      all play a role, it's essential to recognize that alcoholism is not a choice,
+      but a complex condition. Seeking help and support is the first step toward recovery.
+    ref: '[]'
+- model: challenges.timeevent
+  pk: 1
+  fields:
+    title: Park
+    content: Take a break and head to the park for just 15 minutes today. Nature's
+      serenity awaits you!
+    time_sec: 900
+- model: challenges.socraticdialoguequestions
+  pk: 1
+  fields:
+    title: '1'
+    Value: How do you feel today?

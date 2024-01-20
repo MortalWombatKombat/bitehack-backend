@@ -45,6 +45,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "bitehack2024.accounts.apps.AccountsConfig",
+    "bitehack2024.challenges.apps.ChallengesConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
