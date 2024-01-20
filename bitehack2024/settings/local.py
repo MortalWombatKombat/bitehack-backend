@@ -12,3 +12,5 @@ DATABASES = {
         "HOST": env("POSTGRES_HOST", "localhost"),
     }
 }
+
+ALLOWED_HOSTS = ["*"]
