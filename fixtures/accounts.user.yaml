@@ -1,0 +1,15 @@
+- model: accounts.customuser
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$216000$I8DAn8u038BD$xoa+mcF3OFfIkTmYRP9hXwvUlcGDtpSv7XRIsG8tN7A=
+    last_login: 2024-01-19 22:26:38.398530+00:00
+    is_superuser: true
+    username: admin
+    first_name: Admin
+    last_name: Adminowski
+    email: admin@example.com
+    is_staff: true
+    is_active: true
+    date_joined: 2024-01-19 22:08:32.155573+00:00
+    groups: []
+    user_permissions: []
