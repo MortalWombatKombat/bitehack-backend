@@ -53,3 +53,10 @@ pre-commit install -t commit-msg
 ```
 
 Currently, pre_ticket hook works only when commit message is passed as a `-m` parameter to a git commit command.
+
+## Login to admin panel
+
+To log in the admin panel, you can use the following credentials:
+
+Username: admin
+Password: admin321!
