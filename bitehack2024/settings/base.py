@@ -85,8 +85,6 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = (BASE_DIR.joinpath("commons"),)
-
 # ------------- PASSWORDS -------------
 AUTH_USER_MODEL = "accounts.CustomUser"
 
@@ -132,6 +130,8 @@ LOCALE_PATHS = (BASE_DIR.joinpath("locale"),)
 # ------------- STATIC -------------
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR.joinpath("public")
+
+STATICFILES_DIRS = (BASE_DIR.joinpath("commons"),)
 
 # ------------- MEDIA -------------
 MEDIA_URL = "/media/"
