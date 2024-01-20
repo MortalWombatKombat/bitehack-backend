@@ -79,7 +79,7 @@ install_pre_commit:  ## install pre-commit hooks
 	pre-commit install --install-hooks
 	pre-commit install -t commit-msg
 
-bootstrap: install_requirementsinstall_pre_commit  ## bootstrap project
+bootstrap: install_requirements install_pre_commit  ## bootstrap project
 	python manage.py migrate
 	[ -d fixtures ] && python manage.py loaddata fixtures/*.yaml || exit 0
 
@@ -89,9 +89,9 @@ rebuild-db:  ## recreates database with fixtures
 	python manage.py loaddata fixtures/*
 
 bootstrap-docker:  ## bootstrap project in docker
-	docker-compose up --build -d
-	docker-compose exec web python manage.py migrate
-	docker-compose exec web python manage.py loaddata fixtures/*.yaml
+	docker compose up --build -d
+	docker compose exec web python manage.py migrate
+	docker compose exec web python manage.py loaddata fixtures/*.yaml
 
 show-docker-tags: ## shows docker tags for building and pushing image
 	echo $(TAGS)
