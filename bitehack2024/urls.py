@@ -23,6 +23,7 @@ router = DefaultRouter()
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path("api/auth/", include("bitehack2024.accounts.urls")),
     path(
         "api/doc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"
     ),
