@@ -237,6 +237,8 @@ pexpect==4.9.0
     # via
     #   -r base.txt
     #   ipython
+pillow==10.2.0
+    # via -r base.txt
 platformdirs==4.1.0
     # via
     #   black

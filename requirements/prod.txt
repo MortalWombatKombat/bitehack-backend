@@ -169,6 +169,8 @@ pexpect==4.9.0
     # via
     #   -r base.txt
     #   ipython
+pillow==10.2.0
+    # via -r base.txt
 prompt-toolkit==3.0.43
     # via
     #   -r base.txt
