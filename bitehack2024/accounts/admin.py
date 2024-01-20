@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 
-from bitehack2024.accounts.models import CustomUser
+from bitehack2024.accounts.models import Addiction, CustomUser, MoodEntry
 
 
 @admin.register(CustomUser)
@@ -27,3 +27,13 @@ class CustomUserAdmin(UserAdmin):
         ),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
     )
+
+
+@admin.register(Addiction)
+class AddictionAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(MoodEntry)
+class MoodEntryAdmin(admin.ModelAdmin):
+    pass
