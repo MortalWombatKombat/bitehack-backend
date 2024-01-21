@@ -5,16 +5,16 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ReadOnlyModelViewSet
 
-from bitehack2024.accounts.models import Addiction, MoodEntry
+from bitehack2024.accounts.models import Addiction, CustomUser, MoodEntry
 from bitehack2024.accounts.serializers import AddictionSerializer, MoodEntrySerializer
 
 
 class CustomUserViewSet(UserViewSet):
-    pass
+    queryset = CustomUser.objects.all()
 
 
 class AddictionViewSet(ReadOnlyModelViewSet):
-    model = Addiction
+    queryset = Addiction.objects.all()
     serializer_class = AddictionSerializer
 
 

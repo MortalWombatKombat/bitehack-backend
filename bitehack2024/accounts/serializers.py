@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from rest_framework.permissions import IsAuthenticated
 
 from bitehack2024.accounts.models import Addiction, CustomUser, MoodEntry
 
@@ -7,10 +6,16 @@ from bitehack2024.accounts.models import Addiction, CustomUser, MoodEntry
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = (
+        fields = [
             "id",
             "username",
-        )
+            "email",
+            "first_name",
+            "last_name",
+            "avatar",
+            "addiction",
+            "challenges_done",
+        ]
 
 
 class AddictionSerializer(serializers.ModelSerializer):
