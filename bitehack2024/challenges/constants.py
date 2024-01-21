@@ -6,6 +6,12 @@ from bitehack2024.challenges.models import (
     SocraticDialogueQuestions,
     TimeEvent,
 )
+from bitehack2024.challenges.serializers import (
+    EducationalSerializer,
+    QuestionSetSerializer,
+    SocraticDialogueQuestionsSerializer,
+    TimeEventSerializer,
+)
 
 
 class ChallengeTypes(models.TextChoices):
@@ -15,9 +21,16 @@ class ChallengeTypes(models.TextChoices):
     TIME_EVENT = "time_event", "Time event"
 
 
-CHALLENGE_TYPE_MODEL_MAP = {
-    ChallengeTypes.SOCRATIC_DIALOGUE: SocraticDialogueQuestions,
-    ChallengeTypes.QuestionSet: QuestionSet,
-    ChallengeTypes.EDUCATIONAL: Educational,
-    ChallengeTypes.TIME_EVENT: TimeEvent,
+CHALLENGE_MODEL_TYPE_MAP = {
+    SocraticDialogueQuestions: ChallengeTypes.SOCRATIC_DIALOGUE,
+    QuestionSet: ChallengeTypes.QuestionSet,
+    Educational: ChallengeTypes.EDUCATIONAL,
+    TimeEvent: ChallengeTypes.TIME_EVENT,
+}
+
+CHALLENGE_TYPE_SERIALIZER_MAP = {
+    ChallengeTypes.SOCRATIC_DIALOGUE: SocraticDialogueQuestionsSerializer,
+    ChallengeTypes.QuestionSet: QuestionSetSerializer,
+    ChallengeTypes.EDUCATIONAL: EducationalSerializer,
+    ChallengeTypes.TIME_EVENT: TimeEventSerializer,
 }

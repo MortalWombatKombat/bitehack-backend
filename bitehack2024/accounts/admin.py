@@ -11,7 +11,16 @@ class CustomUserAdmin(UserAdmin):
         (None, {"fields": ("username", "password")}),
         (
             _("Personal info"),
-            {"fields": ("first_name", "last_name", "email", "avatar")},
+            {
+                "fields": (
+                    "first_name",
+                    "last_name",
+                    "email",
+                    "avatar",
+                    "addiction",
+                    "challenges_done",
+                )
+            },
         ),
         (
             _("Permissions"),
