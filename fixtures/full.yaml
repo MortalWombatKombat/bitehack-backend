@@ -1,7 +1,7 @@
 - model: accounts.addiction
   pk: 1
   fields:
-    name: Alkohol
+    name: Alcoholism
     time_events:
     - 1
     educational:
@@ -11,10 +11,20 @@
     - 2
     socratic_dialogue_questions:
     - 1
+- model: accounts.addiction
+  pk: 2
+  fields:
+    name: Other
+    time_events:
+    - 1
+    educational: []
+    question_sets: []
+    socratic_dialogue_questions:
+    - 1
 - model: challenges.questionset
   pk: 1
   fields:
-    title: alkohol 1
+    title: Alcoholism 1
     questions:
     - 1
     - 2
@@ -22,7 +32,7 @@
 - model: challenges.questionset
   pk: 2
   fields:
-    title: alkohol 2
+    title: Alcoholism 2
     questions:
     - 4
     - 5
@@ -64,7 +74,7 @@
 - model: challenges.educational
   pk: 1
   fields:
-    title: Przyczyna alkoholizmu
+    title: Alcoholism causes
     content: Alcoholism, also known as alcohol use disorder (AUD), is influenced by
       a combination of factors. While genetics, environment, and social influences
       all play a role, it's essential to recognize that alcoholism is not a choice,
@@ -81,4 +91,4 @@
   pk: 1
   fields:
     title: '1'
-    Value: How do you feel today?
+    value: How do you feel today?

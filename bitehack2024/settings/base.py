@@ -158,3 +158,5 @@ DJOSER = {
         "current_user": "bitehack2024.accounts.serializers.UserSerializer",
     },
 }
+
+X_FRAME_OPTIONS = "SAMEORIGIN"

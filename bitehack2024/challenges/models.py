@@ -43,7 +43,7 @@ class TimeEvent(models.Model):
 
 class SocraticDialogueQuestions(models.Model):
     title = models.CharField(max_length=255)
-    Value = models.TextField()
+    value = models.TextField()
 
     def __str__(self):
         return self.title

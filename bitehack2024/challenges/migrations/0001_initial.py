@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("title", models.CharField(max_length=255)),
-                ("Value", models.TextField()),
+                ("value", models.TextField()),
             ],
         ),
         migrations.CreateModel(
